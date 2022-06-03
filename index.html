@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="Portfolio,Anisaftab,Anisaftab Saiyed,HTML, CSS, JavaScript">
+        <meta name="author" content="Anisaftab Saiyed">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Anis' Portfolio Website</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/Cover.jpg" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation bar">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Introduction-->
+        <section class="intro" id ="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Anis</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Computer Science Student</p>
+            <img src="img/img-1.jpg" alt="Display picture of Anis" class="intro__img">
+        </section>
+
+        <!--About me-->
+        <section class="about-me" id ="about">
+            <h2 class="section__title section__title--about">
+                Who I Am
+            </h2>
+            <p class="section__subtitle section__subtitle--about">Self-Learner and Uni student based in Ottawa</p>
+            <div class="about-me__body">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                   when an unknown printer took a galley of type and scrambled it to make a type 
+                   specimen book.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type 
+                    specimen book.</p>
+            </div>
+
+            <img src="img/img-2.jpg" alt="Picture of Anisaftab" class="about-me__img">
+        </section>
+
+        <!--Projects-->
+        <section class="projects" id ="projects">
+            <h2 class="section__title section__title--projects">
+                My Projects
+            </h2>
+            <p class="section__subtitle section__subtitle--projects">A selection of my range of work</p>
+
+
+            <div class="portfolio">
+                <!--Project 1-->
+                <a href="#" class=""portfolio__item>
+                    <img src="img/proj-1.jpg" alt="" class="portfolio__img">
+                </a>
+                <!--Project 2-->
+                <a href="#" class=""portfolio__item>
+                    <img src="img/proj-2.jpg" alt="" class="portfolio__img">
+                </a>
+                <!--Project 3-->
+                <a href="#" class=""portfolio__item>
+                    <img src="img/proj-3.jpeg" alt="" class="portfolio__img">
+                </a>
+                <!--Project 4-->
+                <a href="#" class=""portfolio__item>
+                    <img src="img/proj-4.jpg" alt="" class="portfolio__img">
+                </a>
+            </div> 
+        </section>
+
+
+        <!--Footer-->
+        <footer>
+          <a href="mailto:saiyed.anis0@gmail.com" class="footer__link">saiyed.anis0@gmail.com</a>
+          <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/anisaftab/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+              </li>
+              <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Anisaftab/Portfolio">
+                        <i class="fab fa-github"></i>
+                    </a>
+               </li>
+          </ul>
+        </footer>
+    </body>
+</html>
