@@ -33,12 +33,19 @@ let navList = document.querySelectorAll('nav .nav__menu ul li a')
 function scrollActive(){
 
     const scrollY = window.scrollY
+    var distanceFromBottom = document.body.scrollHeight - window.innerHeight - window.scrollY
+    
     sections.forEach( sec =>{
         const sectionHeight = sec.offsetHeight
         const sectionTop = sec.offsetTop - 200
         let id = sec.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if(distanceFromBottom <= 105){
+            navList.forEach(links => {
+                links.classList.remove('active-link')
+                document.querySelector('nav .nav__menu ul li a[href*=' + id + ']').classList.add('active-link')
+            });
+        } else if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             navList.forEach(links => {
                 links.classList.remove('active-link')
                 document.querySelector('nav .nav__menu ul li a[href*=' + id + ']').classList.add('active-link')
