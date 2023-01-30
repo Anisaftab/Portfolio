@@ -343,17 +343,17 @@ img{
 
 .button-link{
     background: none;
-    color: var(--first-color-dark);
-    padding:0;
+    color: var(--first-color);
+    margin-top: 1rem;
+    
 }
 
 .button-link:hover{
-    background: none;
+    background: var(--first-color-light);
+    color: var(--first-color-lighten);
 }
 
-.portfolio__button{
-    margin-top: 20px;
-}
+
 /*===== ABOUT =====*/
 .about__data{
     text-align: center;
@@ -432,7 +432,7 @@ img{
     padding: 1.5rem;
     padding-bottom: 2rem;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+    box-shadow: 0 4px 6px rgba(5, 8, 10, 0.3);
 }
 
 .portfolio__icon{
