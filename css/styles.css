@@ -468,12 +468,17 @@ img{
 
 .portfolio__container{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding-bottom: 3rem;
 }
 
 .portfolio__content:hover .portfolio__img{
     transform: scale(1.02);
 }
 
+.button-group{
+    display: inline-block;
+    margin-right: var(--mb-1);
+}
 /*===== CONTACTME =====*/
 .contact__container{
     row-gap: 2.5rem;
@@ -486,8 +491,8 @@ img{
 .contact__box{
     background-color: #FFF;
     border-radius: 0.5rem;
-    padding: 1.5rem;
-    padding-bottom: 2rem;
+    padding: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
 }
@@ -528,7 +533,7 @@ img{
 
 .footer__title{
     font-size: var(--h1-font-size);
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-2);
     font-weight: var(--font-semi-bold);
 
 }
@@ -536,7 +541,7 @@ img{
 
 
 .footer__link{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--first-color-lighten);
     margin:0 var(--mb-1);
     transition: 0.3s;
@@ -547,7 +552,9 @@ img{
 .footer__description{
     margin-bottom: var(--mb-3);
 }
-
+.footer__social{
+    margin-top: var(--mb-3);
+}
 
 
 

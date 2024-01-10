@@ -39,11 +39,11 @@ function scrollActive(){
         const sectionHeight = sec.offsetHeight
         const sectionTop = sec.offsetTop - 200
         let id = sec.getAttribute('id')
-
+        
         if(distanceFromBottom <= 105){
             navList.forEach(links => {
                 links.classList.remove('active-link')
-                document.querySelector('nav .nav__menu ul li a[href*=' + id + ']').classList.add('active-link')
+                document.querySelector('nav .nav__menu ul li a[href="#contact"]').classList.add('active-link');
             });
         } else if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             navList.forEach(links => {
