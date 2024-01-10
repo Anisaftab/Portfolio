@@ -342,9 +342,10 @@ img{
 }
 
 .button-link{
-    background: none;
+    background: var(--first-color-lighten);
     color: var(--first-color);
     margin-top: 1rem;
+    border: 2px solid var(--first-color);
     
 }
 
@@ -475,10 +476,6 @@ img{
     transform: scale(1.02);
 }
 
-.button-group{
-    display: inline-block;
-    margin-right: var(--mb-1);
-}
 /*===== CONTACTME =====*/
 .contact__container{
     row-gap: 2.5rem;
